@@ -1,0 +1,43 @@
+#profile-div{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    height: 92vh;
+    font-family: 'Helvetica';
+}
+
+#profile-main-info-div{
+    width: 30%;
+    min-width: 210px;
+    max-height: 650px;
+    min-height: 450px;
+    background-color: #e62660;
+    /* background: linear-gradient(#e62660, #e62660); */
+    display: grid;
+    grid-template-rows: minmax(200px, 50%) repeat(2,  30px) minmax(200px, 25%);
+    color: #e6ecec;
+}
+
+#newsfeed-div{
+    width: 70%;
+}
+
+#profile-picture-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-name-div, #profile-tagname-div ,#profile-info-div{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#profile-picture-div-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
