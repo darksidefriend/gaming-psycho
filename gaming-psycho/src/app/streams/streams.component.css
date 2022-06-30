@@ -1,0 +1,173 @@
+#streams-div{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    min-width: 800px;
+    margin: auto;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+}
+
+#streams-search-div{
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #e62660;
+    display: grid;
+    grid-template-columns: 30px 1fr 60px 30px;
+    grid-template-rows: 30px 1fr 30px;
+}
+
+#streams-search-textarea-div{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 1px solid #e62660;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #e5e5e5;
+    transition: border-width 0.2s;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#streams-search-textarea-div:focus{
+    outline: none !important;
+    border-color: #e62660;
+    border-width: 3px;
+}
+
+#streams-search-button-div{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e62660;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.2s;
+}
+
+#streams-search-button-div:hover{
+    background-color: #f96290;
+    cursor: pointer;
+}
+
+#streams-search-button-div svg{
+    fill: #e6ecec;
+    width: 20px;
+}
+
+.stream-card-div{
+    width: 100%;
+    height: 160px;
+    display: grid;
+    grid-template-columns: 10px 260px 10px 1fr 70px 10px;
+    grid-template-rows: 10px 35px 2px 25px 2px 20px 56px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.stream-card-div:not(:last-child){
+    border-bottom: 2px solid #e62660;
+}
+
+.stream-card-div:hover{
+    cursor: pointer;
+    background-color: #e62660;
+    color: #e6ecec;
+}
+
+.stream-card-div:hover .stream-status-live{
+    background-color: #e6ecec;
+    color: #e62660;
+}
+
+.stream-card-div:hover .stream-status-recorded{
+    background-color: #e6ecec;
+    color: #303030;
+}
+
+.stream-card-div:hover .stream-channel-name{
+    color: #e6ecec;
+}
+
+.stream-card-div:hover .stream-viewers-count{
+    color: #e6ecec;
+}
+
+.stream-card-div:hover .stream-description{
+    color: #e6ecec;
+}
+
+.stream-image{
+    grid-column: 2/3;
+    grid-row: 2/8;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.stream-name{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.stream-status-live{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e62660;
+    color: #e5e5e5;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.stream-status-recorded{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303030;
+    color: #e5e5e5;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.stream-channel-name{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e62660;
+    transition: color 0.3s;
+}
+
+.stream-viewers-count{
+    grid-column: 4/5;
+    grid-row: 6/7;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8d8d8d;
+    transition: color 0.3s;
+}
+
+.stream-description{
+    display: flex;
+    align-items: center;
+    grid-column: 4/5;
+    grid-row: 7/8;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8d8d8d;
+    transition: color 0.3s;
+}

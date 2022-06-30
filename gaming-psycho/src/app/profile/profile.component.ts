@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ProfileComponent implements OnInit {
 
   profileName = 'Daniil Savelev';
-  profileInfo = 'Самый натуральный ГЕЙмер';
-  profileTagname = '4ssh0le'
+  profileInfo = `Xbox enjoyer
+  #personaбольшенеэкcклюзив`;
+  profileTagname = 'sk8er_boi'
 
   constructor() { }
 
