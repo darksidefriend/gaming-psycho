@@ -65,7 +65,7 @@
     width: 100%;
     height: 100px;
     display: grid;
-    grid-template-columns: 10px 80px 10px 1fr 10px;
+    grid-template-columns: 10px 80px 10px 1fr 160px 10px;
     grid-template-rows: 10px 40px 5px 35px 10px;
     transition: background-color 0.3s;
 }
@@ -73,6 +73,10 @@
 .community-card-div:hover{
     cursor: pointer;
     background-color: #e62660;
+    color: #e6ecec;
+}
+
+.community-card-div:hover .group-followers{
     color: #e6ecec;
 }
 
@@ -105,5 +109,16 @@
     display: flex;
     align-items: center;
     font-size: 18px;
+}
+
+.group-followers{
+    grid-row: 2/3;
+    grid-column: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 16px;
+    color: #f96290;
+    /* background-color: #e62660; */
 }
 

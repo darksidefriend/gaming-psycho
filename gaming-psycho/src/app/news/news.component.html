@@ -1,16 +1,16 @@
 <div id="news-div">
     <div id="newslist-div">
-        <div id="newslist-maintext-div">
+        <div id="newslist-maintext-div" (click)="openArticle('ats_montana')">
             <div class="news-author-div">SCS Software</div>
             <div class="news-author-img-div">
                 <img src="/assets/images/group-images/scssoftware.jpg" alt="">  
             </div>
             <div class="news-short-content-div">DLC Montana вышла!</div>
-            <div class="news-main-content-div">
+            <!-- <div class="news-main-content-div">
                 <span>
                     Montana is home to extraordinary experiences and moments that will leave you in awe. This northern US state is untamed, wild and natural. Montana is a gateway to Glacier and Yellowstone—two crown jewels of the national park system—and is home to glistening glacial lakes, snow-capped mountain peaks, blue-ribbon trout streams, and mighty Missouri, Yellowstone, and Flathead Rivers. This is just the beginning; the stunning mountain scenery of Montana only accentuates the rustic charm of the small towns beneath it. And backcountry trails lead to wild, secluded spaces where it is still possible to be utterly alone.
                 </span>
-            </div>
+            </div> -->
         </div>
         <div class="regular-news-div" id="budka-news">
             <div class="news-author-div">Будка Фила...</div>
@@ -18,7 +18,7 @@
                 <img src="/assets/images/group-images/budka.jpg" alt="">  
             </div>
             <div class="news-short-content-div">
-                <span>Немного нового геймплея в новом трейлере Redfall</span>
+                <span>Немного геймплея в трейлере Redfall</span>
             </div>
         </div>
         <div class="regular-news-div" id="hypewave-news">
@@ -77,3 +77,4 @@
 
     </div>
 </div>
+<news-article *ngIf="newsArticleIsOpen" [articleName]="openedArticleName" (closeNewsArticle)="closeArticle()"></news-article>

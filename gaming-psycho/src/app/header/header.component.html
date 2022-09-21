@@ -1,4 +1,4 @@
-<div class="header-div">
+<div class="header-div" *ngIf="!headerIsHidden">
     <div class="header-div-item">
         <span style="font-weight: 900;">GP</span>
     </div>
@@ -20,7 +20,7 @@
     <div class="header-div-item" routerLink="/games">
         <span>Игры</span>
     </div>
-    <div class="header-div-item" id="exit-div-item" routerLink="">
+    <div class="header-div-item" id="exit-div-item" (click)="hideHeader()" routerLink="/authorization">
         <span>Выйти</span>
     </div>
 

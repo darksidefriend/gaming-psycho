@@ -7,6 +7,8 @@ import { GamesComponent } from './games/games.component';
 import { NewsComponent } from './news/news.component';
 import { ProfileComponent } from './profile/profile.component';
 import { StreamsComponent } from './streams/streams.component';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { AmericantrucksimulatorComponent } from './americantrucksimulator/americantrucksimulator.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'news', component: NewsComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'streams', component: StreamsComponent},
+  {path: 'authorization', component: AuthorizationComponent},
+  {path: 'americantrucksimulator', component: AmericantrucksimulatorComponent},
   {path: '', redirectTo: 'profile', pathMatch: 'full'}
 ];
 

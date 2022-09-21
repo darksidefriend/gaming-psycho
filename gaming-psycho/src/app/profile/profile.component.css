@@ -18,7 +18,7 @@
     background-color: #e62660;
     border-radius: 10px;
     display: grid;
-    grid-template-rows: 10px 15px 30px 7px 20px 7px 70px 10px;
+    grid-template-rows: 10px 15px 30px 7px 20px 7px 70px 10px 30px 374px 10px;
     grid-template-columns: 10px 150px 20px 1fr 10px;
     color: #e6ecec;
     margin-right: 10px;
@@ -58,6 +58,115 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+
+#profile-additional-info-div{
+    grid-row: 10/-1;
+    grid-column: 1/6;
+    display: grid;
+    grid-template-rows: 1fr 10px;
+    grid-template-columns: 10px 1.5fr 10px 2fr 10px;
+}
+
+#profile-friends-div{
+    background-color: #e6ecec;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-communities-div{
+    background-color: #e6ecec;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-friends-header-div, #profile-communities-header-div{
+    background-color: #b11c48;
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #e6ecec;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.profile-friends-item-div, .profile-communities-item-div{
+    height: 40px;
+    border-bottom: 2px solid #b11c48;
+    display: grid;
+    grid-template-columns: 5px 30px 10px 10px 10px 1fr 5px;
+    grid-template-rows: 5px 30px 5px;
+    transition: 0.3s background-color, color;
+    /* transition: 0.3s color; */
+}
+
+.profile-friends-item-div:hover, .profile-communities-item-div:hover{
+    background-color: #e62660;
+    cursor: pointer;
+}
+
+.profile-friends-item-div:hover .profile-friends-item-name-div{
+    color: #e6ecec;
+}
+
+.profile-communities-item-div:hover .profile-communities-item-name-div{
+    color: #e6ecec;
+}
+
+.profile-friends-item-div:last-of-type, .profile-communities-item-div:last-of-type{
+    border-bottom: none;
+}
+
+.profile-friends-item-img-div{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.profile-friends-item-img-div img{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #e62660;
+}
+
+.profile-friends-item-name-div{
+    grid-row: 2/3;
+    grid-column: 4/7;
+    color: #e62660;
+    font-size: 14px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.profile-communities-item-img-div{
+    grid-row: 2/3;
+    grid-column: 2/5;
+}
+
+.profile-communities-item-img-div img{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px 5px;
+}
+
+.profile-communities-item-name-div{
+    grid-row: 2/3;
+    grid-column: 6/7;
+    color: #e62660;
+    font-size: 14px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 #my-newsfeed-div{

@@ -1,0 +1,66 @@
+<div id="news-article-main-div">
+    <div id="news-article-content-div">
+        <div id="news-article-text-div">
+            <div id="news-article-picture-div">            
+                <ng-container [ngSwitch]="articleName">
+                    <ng-container *ngSwitchCase="'ats_montana'">
+                        <img src="/assets/images/news/atsmontana.jpg" alt="" (click)="closeArticle()">
+                    </ng-container>
+                </ng-container> 
+            </div>
+            <div id="news-article-shorttext-div">
+                <ng-container [ngSwitch]="articleName">
+                    <ng-container *ngSwitchCase="'ats_montana'">
+                        <span>DLC Montana вышла!</span>
+                    </ng-container>
+                </ng-container> 
+            </div>
+            <div id="news-article-longtext-div">
+                <ng-container [ngSwitch]="articleName">
+                    <ng-container *ngSwitchCase="'ats_montana'">
+                        <p>
+                            Монтана является домом для необычных впечатлений и моментов, которые вызовут у вас трепет. Этот северный штат США дикий и естественный. Монтана является воротами в Глейшер и Йеллоустоун — две жемчужины системы национальных парков — и является домом для сверкающих ледниковых озер, заснеженных горных вершин, ручьев с голубой форелью и могучих рек Миссури, Йеллоустоун и Флэтхед.
+                        </p>
+                        <p>
+                            Это только начало; потрясающие горные пейзажи Монтаны только подчеркивают деревенское очарование маленьких городков под ними. А проселочные тропы ведут в дикие, уединенные места, где еще можно побыть в полном одиночестве. 
+                        </p> 
+                        <p>
+                            Огромный, нетронутый и дикий, «Штат Большого Неба» представляет собой самое лучшее из американского Запада. Суровые ковбои до сих пор катаются верхом на ранчо и удивляют публику на родео. Города-призраки, государственные парки и единственная в своем роде Тропа динозавров хранят ослепительное множество исторических сокровищ.
+                        </p>
+                    </ng-container>
+                </ng-container> 
+            </div>
+            <div id="news-article-signature-div">
+                <ng-container [ngSwitch]="articleName">
+                    <ng-container *ngSwitchCase="'ats_montana'">
+                        <img src="/assets/images/group-images/scssoftware.jpg" alt="">
+                        <span>@SCSSoftware</span>
+                    </ng-container>
+                </ng-container> 
+            </div>
+        </div>
+        <div id="news-article-comments-div">
+            <div id="news-article-comments-header-div">
+                <span>Комментарии:</span>
+            </div>
+            <div class="divider-div"></div>
+            <div class="news-article-comment-div">
+                <img src="/assets/images/profiles/myprofile.jpeg" alt="">
+                <span class="comment-author-name">Daniil Savelev</span>
+                <span class="comment-author-tag">@sk8er_boi</span>
+                <span class="comment-text">Только что приобрёл новое DLC к <span class="comment-tag-span">@AmericanTruckSimulator</span> - DLC Montana. Титаническая работа была проделана. Моё уважение ребятам из <span class="comment-tag-span">@SCSSoftware</span>!</span>
+            </div>
+            <div class="divider-div"></div>
+            <div class="news-article-comment-div">
+                <img src="/assets/images/profiles/myprofile.jpeg" alt="">
+                <span class="comment-author-name">Jack White</span>
+                <span class="comment-author-tag">@jakewhiteofficial</span>
+                <span class="comment-text">Первый раз покупаю DLC для <span class="comment-tag-span">@AmericanTruckSimulator</span>, и оно того стоит! 10 из 10 колёс ребятам из Чехии в выхлопную трубу!</span>
+            </div>
+            <div class="news-article-new-comment-div">
+                <span>Оставьте комментарий:</span>
+                <div contenteditable="true"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -10,6 +10,10 @@ import { CommunitiesComponent } from './communities/communities.component';
 import { NewsComponent } from './news/news.component';
 import { StreamsComponent } from './streams/streams.component';
 import { GamesComponent } from './games/games.component';
+import { NewsArticleComponent } from './news-article/news-article.component';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { AmericantrucksimulatorComponent } from './americantrucksimulator/americantrucksimulator.component';
+import { Persona5streamComponent } from './persona5stream/persona5stream.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { GamesComponent } from './games/games.component';
     CommunitiesComponent,
     NewsComponent,
     StreamsComponent,
-    GamesComponent
+    GamesComponent,
+    NewsArticleComponent,
+    AuthorizationComponent,
+    AmericantrucksimulatorComponent,
+    Persona5streamComponent
   ],
   imports: [
     BrowserModule,

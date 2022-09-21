@@ -80,6 +80,12 @@
     color: #e6ecec;
 }
 
+.game-card-div:hover .game-buy{
+    cursor: pointer;
+    background-color: #e6ecec;
+    color: #e62660;
+}
+
 .game-card-div:hover .game-publisher-name{
     color: #e6ecec;
 }

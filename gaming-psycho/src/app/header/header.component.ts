@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  headerIsHidden : boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  hideHeader(){
+    this.headerIsHidden = true;
   }
 
 }
